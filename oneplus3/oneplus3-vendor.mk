@@ -949,6 +949,7 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     libtime_genoff \
     QtiTelephonyService \
+    TimeService \
     datastatusnotification \
     qcrilhook \
     qcrilmsgtunnel \
