@@ -28,10 +28,8 @@ PRODUCT_PACKAGES += \
     imssettings \
     CABLService \
     colorservice \
-    dpmserviceapp \
     qcnvitems \
     embms \
-    CNEService \
     dashd \
     qti-vzw-ims-internal
 
