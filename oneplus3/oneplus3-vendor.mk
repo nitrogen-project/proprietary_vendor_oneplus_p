@@ -935,9 +935,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/lib64/android.hardware.gnss@8.0.so:system/lib64/android.hardware.gnss@8.0.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/lib-sec-disp.so:system/vendor/lib64/lib-sec-disp.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libhui.so:system/vendor/lib64/libhui.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libux.so:system/vendor/lib64/libux.so \
-    vendor/oneplus/oneplus3/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so \
-    vendor/oneplus/oneplus3/proprietary/lib64/libcameraservice.so:system/lib64/libcameraservice.so
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libux.so:system/vendor/lib64/libux.so
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
