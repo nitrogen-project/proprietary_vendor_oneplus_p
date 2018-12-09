@@ -33,7 +33,9 @@ PRODUCT_PACKAGES += \
     embms \
     CNEService \
     dashd \
-    qti-vzw-ims-internal
+    qti-vzw-ims-internal \
+    WfdService \
+    WfdCommon
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/bin/ifaadaemon:system/bin/ifaadaemon \
@@ -954,3 +956,58 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libaptX_encoder.so:system/vendor/lib64/libaptX_encoder.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so:system/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so:system/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
+
+# WFD
+PRODUCT_COPY_FILES += \
+     vendor/oneplus/oneplus3/proprietary/bin/wfdservice:system/bin/wfdservice \
+     vendor/oneplus/oneplus3/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
+     vendor/oneplus/oneplus3/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
+     vendor/oneplus/oneplus3/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+     vendor/oneplus/oneplus3/proprietary/lib/extractors/libmmparser.so:system/lib/extractors/libmmparser.so \
+     vendor/oneplus/oneplus3/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
+     vendor/oneplus/oneplus3/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
+     vendor/oneplus/oneplus3/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
+     vendor/oneplus/oneplus3/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
+     vendor/oneplus/oneplus3/proprietary/lib/libwfdavenhancements.so:system/lib/libwfdavenhancements.so \
+     vendor/oneplus/oneplus3/proprietary/lib/libwfdclient.so:system/lib/libwfdclient.so \
+     vendor/oneplus/oneplus3/proprietary/lib/libwfdcodecv4l2.so:system/lib/libwfdcodecv4l2.so \
+     vendor/oneplus/oneplus3/proprietary/lib/libwfdcommonutils.so:system/lib/libwfdcommonutils.so \
+     vendor/oneplus/oneplus3/proprietary/lib/libwfdconfigutils.so:system/lib/libwfdconfigutils.so \
+     vendor/oneplus/oneplus3/proprietary/lib/libwfdmminterface.so:system/lib/libwfdmminterface.so \
+     vendor/oneplus/oneplus3/proprietary/lib/libwfdmmsink.so:system/lib/libwfdmmsink.so \
+     vendor/oneplus/oneplus3/proprietary/lib/libwfdmmsrc.so:system/lib/libwfdmmsrc.so \
+     vendor/oneplus/oneplus3/proprietary/lib/libwfdnative.so:system/lib/libwfdnative.so \
+     vendor/oneplus/oneplus3/proprietary/lib/libwfdrtsp.so:system/lib/libwfdrtsp.so \
+     vendor/oneplus/oneplus3/proprietary/lib/libwfdservice.so:system/lib/libwfdservice.so \
+     vendor/oneplus/oneplus3/proprietary/lib/libwfdsm.so:system/lib/libwfdsm.so \
+     vendor/oneplus/oneplus3/proprietary/lib/libwfduibcinterface.so:system/lib/libwfduibcinterface.so \
+     vendor/oneplus/oneplus3/proprietary/lib/libwfduibcsink.so:system/lib/libwfduibcsink.so \
+     vendor/oneplus/oneplus3/proprietary/lib/libwfduibcsinkinterface.so:system/lib/libwfduibcsinkinterface.so \
+     vendor/oneplus/oneplus3/proprietary/lib/libwfduibcsrc.so:system/lib/libwfduibcsrc.so \
+     vendor/oneplus/oneplus3/proprietary/lib/libwfduibcsrcinterface.so:system/lib/libwfduibcsrcinterface.so \
+     vendor/oneplus/oneplus3/proprietary/lib64/extractors/libmmparser.so:system/lib64/extractors/libmmparser.so \
+     vendor/oneplus/oneplus3/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
+     vendor/oneplus/oneplus3/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
+     vendor/oneplus/oneplus3/proprietary/lib64/libmmrtpencoder.so:system/lib64/libmmrtpencoder.so \
+     vendor/oneplus/oneplus3/proprietary/lib64/libwfdclient.so:system/lib64/libwfdclient.so \
+     vendor/oneplus/oneplus3/proprietary/lib64/libwfdnative.so:system/lib64/libwfdnative.so \
+     vendor/oneplus/oneplus3/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
+     vendor/oneplus/oneplus3/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
+     vendor/oneplus/oneplus3/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so \
+     vendor/oneplus/oneplus3/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal_proprietary.so \
+     vendor/oneplus/oneplus3/proprietary/vendor/lib/libwfdcommonutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcommonutils_proprietary.so \
+     vendor/oneplus/oneplus3/proprietary/vendor/lib/libwfdhaldsmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhaldsmanager.so \
+     vendor/oneplus/oneplus3/proprietary/vendor/lib/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhdcpcp.so \
+     vendor/oneplus/oneplus3/proprietary/vendor/lib/libwfdmmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmmservice.so \
+     vendor/oneplus/oneplus3/proprietary/vendor/lib/libwfdmodulehdcpsession.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmodulehdcpsession.so \
+     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdhdcpcp.so \
+     vendor/oneplus/oneplus3/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
+     vendor/oneplus/oneplus3/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
+     vendor/oneplus/oneplus3/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
+     vendor/oneplus/oneplus3/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
+     vendor/oneplus/oneplus3/proprietary/lib64/libOmxMux.so:system/lib64/libOmxMux.so \
+     vendor/oneplus/oneplus3/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
+     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal_proprietary.so \
+     vendor/oneplus/oneplus3/proprietary/lib/libaacwrapper.so:system/lib/libaacwrapper.so \
+     vendor/oneplus/oneplus3/proprietary/lib64/libaacwrapper.so:system/lib64/libaacwrapper.so
